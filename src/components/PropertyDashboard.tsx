@@ -4,6 +4,7 @@ import { Form } from './Form';
 import * as ApiService from '../api-service';
 
 interface IProperty {
+  id: string;
   name: string;
   imageURL: string;
   description: string;
@@ -30,8 +31,23 @@ export function PropertyDashboard() {
     <div>
       <h1>Property Dashboard</h1>
       {properties.map((property) => {
-        return <div>{property.name}</div>;
+        return (
+          <div>
+            {
+              <PropertyItem
+                name={property.name}
+                imageURL={property.imageURL}
+                description={property.description}
+                price={property.price}
+                beds={property.beds}
+                baths={property.baths}
+                type={property.type}
+              />
+            }
+          </div>
+        );
       })}
+
       <Form />
     </div>
   );
