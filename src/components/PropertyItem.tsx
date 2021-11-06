@@ -1,12 +1,4 @@
-interface IProperty {
-  name: string;
-  imageURL: string;
-  description: string;
-  price: number;
-  beds: number;
-  baths: number;
-  type: string;
-}
+import { IProperty } from '../types';
 
 export function PropertyItem(props: IProperty) {
   return (

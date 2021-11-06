@@ -2,17 +2,7 @@ import { useState, useEffect } from 'react';
 import { PropertyItem } from './PropertyItem';
 import { Form } from './Form';
 import * as ApiService from '../api-service';
-
-interface IProperty {
-  id: string;
-  name: string;
-  imageURL: string;
-  description: string;
-  price: number;
-  beds: number;
-  baths: number;
-  type: string;
-}
+import { IProperty } from '../types';
 
 export function PropertyDashboard() {
   const [properties, setProperties] = useState<IProperty[]>([]);
@@ -27,14 +17,19 @@ export function PropertyDashboard() {
     });
   }
 
+  function addNewProperty(property: IProperty) {
+    ApiService.postOne(property).then(() => loadProperties());
+  }
+
   return (
     <div>
       <h1>Property Dashboard</h1>
       {properties.map((property) => {
         return (
-          <div>
+          <div key={property._id}>
             {
               <PropertyItem
+                _id={property._id}
                 name={property.name}
                 imageURL={property.imageURL}
                 description={property.description}
@@ -48,7 +43,7 @@ export function PropertyDashboard() {
         );
       })}
 
-      <Form />
+      <Form addNewProperty={addNewProperty} />
     </div>
   );
 }
