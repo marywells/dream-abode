@@ -12,28 +12,29 @@ async function getAll(req: Request, res: Response) {
 }
 
 async function postOne(req: Request, res: Response) {
+  const { name, imageURL, description, price, beds, baths, type } =
+    req.body.property;
   try {
     if (
-      !req.body.name ||
-      !req.body.imageURL ||
-      !req.body.description ||
-      !req.body.price ||
-      !req.body.beds ||
-      !req.body.baths ||
-      !req.body.type
+      !name ||
+      !imageURL ||
+      !description ||
+      !price ||
+      !beds ||
+      !baths ||
+      !type
     ) {
       res.sendStatus(400);
     } else {
       const property = await new Property({
-        name: req.body.name,
-        imageURL: req.body.imageURL,
-        description: req.body.description,
-        price: req.body.price,
-        beds: req.body.beds,
-        baths: req.body.baths,
-        type: req.body.type,
+        name,
+        imageURL,
+        description,
+        price,
+        beds,
+        baths,
+        type,
       }).save();
-
       res.status(201).send(property);
     }
   } catch (err) {
