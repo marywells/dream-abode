@@ -14,5 +14,5 @@ export function PropertyItem(props: IProperty) {
 }
 
 const styles = {
-  propertyContainer: 'border-2 rounded-lg text-xs shadow m-2 p-1',
+  propertyContainer: 'w-80 border-2 rounded-lg text-xs shadow m-2 p-1',
 };

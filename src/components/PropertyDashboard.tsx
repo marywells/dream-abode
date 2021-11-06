@@ -22,30 +22,35 @@ export function PropertyDashboard() {
   }
 
   return (
-    <div>
-      <h1>Property Dashboard</h1>
-      {properties.map((property) => {
-        return (
-          <div key={property._id}>
-            {
-              <PropertyItem
-                _id={property._id}
-                name={property.name}
-                imageURL={property.imageURL}
-                description={property.description}
-                price={property.price}
-                beds={property.beds}
-                baths={property.baths}
-                type={property.type}
-              />
-            }
-          </div>
-        );
-      })}
+    <div className={styles.dashboardContainer}>
+      <div className={styles.propertyList}>
+        <h1>Property Dashboard</h1>
+        {properties.map((property) => {
+          return (
+            <div key={property._id}>
+              {
+                <PropertyItem
+                  _id={property._id}
+                  name={property.name}
+                  imageURL={property.imageURL}
+                  description={property.description}
+                  price={property.price}
+                  beds={property.beds}
+                  baths={property.baths}
+                  type={property.type}
+                />
+              }
+            </div>
+          );
+        })}
+      </div>
 
       <Form addNewProperty={addNewProperty} />
     </div>
   );
 }
 
-const styles = {};
+const styles = {
+  dashboardContainer: 'relative pt-16',
+  propertyList: 'absolute flex-col',
+};

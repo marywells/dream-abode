@@ -38,7 +38,7 @@ export function Form({ addNewProperty }: any) {
   }
 
   return (
-    <div>
+    <div className={styles.form}>
       <h1>Add a Property Form</h1>
       <form onSubmit={handleSubmit}>
         <div>Name</div>
@@ -96,4 +96,6 @@ export function Form({ addNewProperty }: any) {
   );
 }
 
-const styles = {};
+const styles = {
+  form: 'w-80 fixed top-10 right-0  bg-blue-100 border p-2 m-2',
+};
