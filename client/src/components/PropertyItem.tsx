@@ -4,14 +4,16 @@ export function PropertyItem(props: IProperty) {
   const { name, type, description, imageURL, price, beds, baths } = props;
   return (
     <div className={styles.propertyContainer}>
-      <div data-testid='propertyItem' className={styles.nameTile}>
+      <div data-testid='propertyItemName' className={styles.nameTile}>
         <p className={styles.name}>{name}</p>
       </div>
 
       <div className={styles.propertyDetails}>
-        <div className={styles.price}>£{price.toLocaleString('en-US')}</div>
+        <div data-testid='propertyItemPrice' className={styles.price}>
+          £{price?.toLocaleString('en-US')}
+        </div>
         <div className={styles.type}>{type}</div>
-        <div>{beds} bedrooms</div>
+        <div data-testid='propertyItemBeds'>{beds} bedrooms</div>
         <div>{baths} bathrooms</div>
         <br />
       </div>

@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches property item snapshot 1`] = `
+<div
+  className="flex-wrap relative w-full border-2 rounded-lg shadow m-6 ml-2 text-xs flex"
+>
+  <div
+    className="flex bg-gray-900 rounded-lg items-center text-center"
+    data-testid="propertyItemName"
+  >
+    <p
+      className="w-40 text-lg p-2 text-white "
+    >
+      1 Test Street
+    </p>
+  </div>
+  <div
+    className="w-24 pl-4 pt-2 mr-2"
+  >
+    <div
+      className="text-lg font-bold"
+      data-testid="propertyItemPrice"
+    >
+      £
+      200000
+    </div>
+    <div
+      className="font-semibold"
+    >
+      Flat
+    </div>
+    <div
+      data-testid="propertyItemBeds"
+    >
+      4
+       bedrooms
+    </div>
+    <div>
+      2
+       bathrooms
+    </div>
+    <br />
+  </div>
+  <div
+    className="w-40"
+  >
+    <img
+      alt="1 Test Street"
+      className="h-28 rounded-lg"
+      src="www.test.com"
+    />
+  </div>
+  <div
+    className="hidden md:block w-72 p-2"
+  >
+    A lovely street
+  </div>
+  <div
+    className="absolute bottom-2 right-2"
+  >
+    <button>
+      ✏️
+    </button>
+    <button>
+      ❌
+    </button>
+  </div>
+</div>
+`;

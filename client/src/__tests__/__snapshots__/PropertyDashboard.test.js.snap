@@ -1,0 +1,144 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches property dashboard snapshot 1`] = `
+<div
+  className="flex-wrap md:relative p-6 pt-20"
+>
+  <div
+    className="md:w-3/5 flex-col"
+  >
+    <h1
+      className="font-bold text-gray-900 pt-2"
+    >
+      “Perhaps home is not a place but simply an irrevocable condition.” James Baldwin
+    </h1>
+  </div>
+  <div
+    className="w-72 md:fixed md:top-20 md:right-2 bg-gray-800 border p-4 m-2 rounded-lg"
+  >
+    <h1
+      className="text-white text-xl font-bold "
+    >
+      Add a Property
+    </h1>
+    <form
+      onSubmit={[Function]}
+    >
+      <div
+        className="text-white text-xs pt-2"
+      >
+        Name
+      </div>
+      <input
+        className="rounded text-sm w-full"
+        onChange={[Function]}
+        placeholder="First line of address"
+        type="text"
+        value=""
+      />
+      <div
+        className="text-white text-xs pt-2"
+      >
+        Image
+      </div>
+      <input
+        className="rounded text-sm w-full"
+        onChange={[Function]}
+        placeholder="Image URL"
+        type="text"
+        value=""
+      />
+      <div
+        className="text-white text-xs pt-2"
+      >
+        Description
+      </div>
+      <input
+        className="rounded text-sm w-full"
+        onChange={[Function]}
+        placeholder="Short description"
+        type="text"
+        value=""
+      />
+      <div
+        className="text-white text-xs pt-2"
+      >
+        Price
+      </div>
+      <input
+        className="rounded text-sm w-full"
+        onChange={[Function]}
+        placeholder="Set price"
+        type="number"
+        value={0}
+      />
+      <div
+        className="text-white text-xs pt-2"
+      >
+        Bedrooms
+      </div>
+      <input
+        className="rounded text-sm w-full"
+        onChange={[Function]}
+        placeholder="Set bedrooms"
+        type="number"
+        value={0}
+      />
+      <div
+        className="text-white text-xs pt-2"
+      >
+        Bathrooms
+      </div>
+      <input
+        className="rounded text-sm w-full"
+        onChange={[Function]}
+        placeholder="Set bathrooms"
+        type="number"
+        value={0}
+      />
+      <div
+        className="text-white text-xs pt-2"
+      >
+        Property Type
+      </div>
+      <select
+        className="rounded text-sm w-full"
+        onChange={[Function]}
+        value=""
+      >
+        <option
+          value="Terraced"
+        >
+          Terraced
+        </option>
+        <option
+          value="Flat"
+        >
+          Flat
+        </option>
+        <option
+          value="Detached"
+        >
+          Detached
+        </option>
+        <option
+          value="Detached"
+        >
+          Semi-Detached
+        </option>
+        <option
+          value="Castle"
+        >
+          Castle
+        </option>
+      </select>
+      <br />
+      <input
+        className="bg-transparent text-white font-semibold hover:text-white border mt-2 py-1 px-3 rounded-full"
+        type="submit"
+        value="Create"
+      />
+    </form>
+  </div>
+</div>
+`;

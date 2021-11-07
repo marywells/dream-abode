@@ -17,3 +17,5 @@ export function postOne(property: IProperty) {
     }),
   });
 }
+
+//TODO 'update property' function to connect to server

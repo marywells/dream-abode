@@ -99,9 +99,7 @@ export function Form({ addNewProperty }: IProps) {
           value={type}
           onChange={(e) => setType(e.target.value)}
         >
-          <option selected value='Terraced'>
-            Terraced
-          </option>
+          <option value='Terraced'>Terraced</option>
           <option value='Flat'>Flat</option>
           <option value='Detached'>Detached</option>
           <option value='Detached'>Semi-Detached</option>
