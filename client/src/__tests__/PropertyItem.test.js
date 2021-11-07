@@ -2,6 +2,7 @@ import ReactDOM from 'react-dom';
 import { PropertyItem } from '../components/PropertyItem';
 import '@testing-library/jest-dom/extend-expect';
 import { render, cleanup } from '@testing-library/react';
+import renderer from 'react-test-renderer';
 
 const mock = {
   name: '1 Test Street',

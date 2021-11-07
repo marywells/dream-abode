@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { FunctionLikeDeclaration } from 'typescript';
 import { IProperty } from '../types';
 
 interface IProps {
