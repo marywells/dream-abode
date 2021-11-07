@@ -8,15 +8,15 @@
 
 ### Design
 
-1. After wireframing I prioritised hitting as many of the original requirements as possible within the 4 hour limit. This meant some functionality was missing (front-end 'update a property'), but back-end handling for this feature was in place.
-2. This approach meant prioritising breadth rather than depth, so testing and styling were in place, but not extensive.
+1. After wireframing I focused on hitting as many of the original requirements as possible within the 4 hour limit. This meant some functionality was missing (front-end 'update a property'), but back-end handling for this feature was in place.
+2. This approach also meant prioritising breadth rather than depth, so testing and styling were in place, but not extensive.
 3. After the 4 hour time limit, I returned to play with styling, add a few more tests and make a rudimentary attempt at responsive design.
 
 ### Technologies
 
 - React with Typescript
 - Tailwind: Tailwind is always a breeze to use, it is compact and intuitive, speeding up development whilst retaining a lot of the freedom of vanilla CSS.
-- Express & MongoDB (Mongoose): selected for suitability and familiarity plus ease of use in a short time-frame.
+- Express & MongoDB (Mongoose): selected for suitability and familiarity plus ease of use in a short time frame.
 
 ### Improvements
 
@@ -24,3 +24,8 @@
 2. Add search and filtering options to the property dashboard.
 3. More robust testing, particularly adding some back-end testing (Supertest).
 4. Improve image handling, both CSS and integrate photo-picking (e.g. Cloudinary).
+
+
+
+<img width="700" alt="dreamabode" src="https://user-images.githubusercontent.com/81030445/140659463-9a8ad91b-8252-4f67-9d33-3859f6cb8f22.PNG">
+
