@@ -4,7 +4,7 @@ function App() {
   return (
     <div>
       <div className={styles.header}>
-        <h1>Dream Abode</h1>
+        <h1>🏠 Dream Abode</h1>
       </div>
 
       <div className='dashboard'>
@@ -15,8 +15,9 @@ function App() {
 }
 
 const styles = {
-  header: 'fixed border bg-blue-200 w-full text-lg shadow z-50',
-  dashboard: 'p-10 w-3/5',
+  header:
+    'fixed border text-gray-900 bg-gray-100 w-full font-bold text-3xl shadow p-4 z-50',
+  dashboard: 'w-3/5',
 };
 
 export default App;

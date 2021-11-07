@@ -24,21 +24,26 @@ export function PropertyDashboard() {
   return (
     <div className={styles.dashboardContainer}>
       <div className={styles.propertyList}>
-        <h1>Property Dashboard</h1>
+        <h1 className={styles.dashboardHeader}>
+          “Perhaps home is not a place but simply an irrevocable condition.”
+          James Baldwin
+        </h1>
         {properties.map((property) => {
           return (
             <div key={property._id}>
               {
-                <PropertyItem
-                  _id={property._id}
-                  name={property.name}
-                  imageURL={property.imageURL}
-                  description={property.description}
-                  price={property.price}
-                  beds={property.beds}
-                  baths={property.baths}
-                  type={property.type}
-                />
+                <div className={styles.propertyItem}>
+                  <PropertyItem
+                    _id={property._id}
+                    name={property.name}
+                    imageURL={property.imageURL}
+                    description={property.description}
+                    price={property.price}
+                    beds={property.beds}
+                    baths={property.baths}
+                    type={property.type}
+                  />
+                </div>
               }
             </div>
           );
@@ -51,6 +56,8 @@ export function PropertyDashboard() {
 }
 
 const styles = {
-  dashboardContainer: 'relative pt-16',
-  propertyList: 'absolute flex-col',
+  dashboardContainer: 'flex-wrap md:relative p-6 pt-20',
+  dashboardHeader: 'font-bold text-gray-900 pt-2',
+  propertyList: 'md:w-3/5 flex-col',
+  propertyItem: '',
 };
