@@ -5,7 +5,10 @@ const serverURL = 'http://localhost:4000/properties';
 export function getAll() {
   return fetch(`${serverURL}`)
     .then((response) => response.json())
-    .then((data) => data);
+    .then((data) => data)
+    .catch(function () {
+      console.log('error connecting');
+    });
 }
 
 export function postOne(property: IProperty) {
@@ -15,6 +18,8 @@ export function postOne(property: IProperty) {
     body: JSON.stringify({
       property,
     }),
+  }).catch(function () {
+    console.log('error connecting');
   });
 }
 

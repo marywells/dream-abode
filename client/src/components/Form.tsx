@@ -117,5 +117,5 @@ const styles = {
   inputLabel: 'text-white text-xs pt-2',
   input: 'rounded text-sm w-full',
   button:
-    'bg-transparent text-white font-semibold hover:text-white border mt-2 py-1 px-3 rounded-full',
+    'bg-transparent hover:bg-gray-900 text-white font-semibold  border mt-2 py-1 px-3 rounded-full',
 };

@@ -5,7 +5,7 @@
     "mongoose": "^6.0.12"
   },
   "scripts": {
-    "dev": "nodemon --watch server/**/* -e ts,json --exec ts-node ./index.ts"
+    "dev": "ts-node index.ts"
   },
   "devDependencies": {
     "@types/cors": "^2.8.12",

@@ -122,7 +122,7 @@ exports[`matches form snapshot 1`] = `
     </select>
     <br />
     <input
-      className="bg-transparent text-white font-semibold hover:text-white border mt-2 py-1 px-3 rounded-full"
+      className="bg-transparent hover:bg-gray-900 text-white font-semibold  border mt-2 py-1 px-3 rounded-full"
       type="submit"
       value="Create"
     />

@@ -28,11 +28,11 @@ export function PropertyDashboard() {
           “Perhaps home is not a place but simply an irrevocable condition.”
           James Baldwin
         </h1>
-        {properties.map((property) => {
+        {properties?.map((property) => {
           return (
             <div key={property._id}>
               {
-                <div className={styles.propertyItem}>
+                <div>
                   <PropertyItem
                     _id={property._id}
                     name={property.name}
@@ -59,5 +59,4 @@ const styles = {
   dashboardContainer: 'flex-wrap md:relative p-6 pt-20',
   dashboardHeader: 'font-bold text-gray-900 pt-2',
   propertyList: 'md:w-3/5 flex-col',
-  propertyItem: '',
 };
